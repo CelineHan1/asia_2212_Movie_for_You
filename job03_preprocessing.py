@@ -9,7 +9,7 @@ print(df.head())
 df_stopwords = pd.read_csv('./stopwords.csv', index_col=0)
 stopwords = list(df_stopwords['stopword'])
 stopwords = stopwords + ['안나', '제니퍼', '미국', '중국', '영화', '감독', '리뷰', '연출',
-                         '장면', '주인공', '되어다', '출연', '싶다', '올해', '엘사']
+                         '장면', '주인공', '되어다', '출연', '싶다', '올해', '엘사', '아카리']
 okt = Okt()
 df['clean_reviews'] = None
 count = 0

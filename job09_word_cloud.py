@@ -12,7 +12,7 @@ mpl.rcParams['axes.unicode_minus']=False
 rc('font', family=font_name)
 
 df = pd.read_csv('./crawling_data/one_sentences.csv')
-words = df[df['titles']=='온워드: 단 하루의 기적 (Onward)']['reviews']
+words = df[df['titles']=='유어 아이즈 텔 (Your Eyes Tell)']['reviews']
 print(words.iloc[0])
 words = words.iloc[0].split()
 print(words)
@@ -27,7 +27,7 @@ plt.figure(figsize=(12, 12))
 plt.imshow(wordcloud_img)
 plt.axis('off')
 
-words = df[df['titles']=='겨울왕국 2 (Frozen 2)']['reviews']
+words = df[df['titles']=='귀멸의 칼날: 나타구모산 편 (Demon Slayer: Kimetsu no Yaiba Mt. NATAGUMO ARC)']['reviews']
 words = words.iloc[0].split()
 worddict = collections.Counter(words)
 worddict = dict(worddict)
