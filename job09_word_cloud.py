@@ -24,7 +24,7 @@ print(worddict)
 wordcloud_img = WordCloud(background_color='white', max_words=2000,
                           font_path=font_path).generate_from_frequencies(worddict)
 plt.figure(figsize=(12, 12))
-plt.imshow(wordcloud_img, interpolation='bilinear')
+plt.imshow(wordcloud_img)
 plt.axis('off')
 
 words = df[df['titles']=='겨울왕국 2 (Frozen 2)']['reviews']
@@ -34,7 +34,7 @@ worddict = dict(worddict)
 wordcloud_img = WordCloud(background_color='white', max_words=2000,
                           font_path=font_path).generate_from_frequencies(worddict)
 plt.figure(figsize=(12, 12))
-plt.imshow(wordcloud_img, interpolation='bilinear')
+plt.imshow(wordcloud_img)
 plt.axis('off')
 plt.show()
 
